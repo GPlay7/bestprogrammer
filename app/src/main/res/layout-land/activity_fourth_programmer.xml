@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp_.worldsbestprogrammer.FirstProgrammer" android:background="@drawable/backgroundo">
+
+    <ImageView
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/billgates"
+        android:id="@+id/imageView" />
+    <ScrollView
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Bill Gates"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text= "Bill Gates: Founder of world's largest software company Microsoft. And also Co-chairman of Gates Foundation. Bill gates is one of the world's richest man in he world. Bill started working with computer when he was 13 years old.When he was 17 Bill Gates formeda company called Traf-o-data. And In the age of 20 Bill Gates founded Microsoft Inc.Bill Gates also created MS-DOS Operating system and Windows OS. Currently Microsoft is one of the valuable company in the world. In 2012 Microsoft earns $73.72 Billion."
+                android:id="@+id/textView2"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
